@@ -1,0 +1,49 @@
+.header {
+   height: 60px;
+   width: 100%;
+   position: relative;
+}
+.heder_container {
+   display: flex;
+   justify-content: space-between;
+}
+.logo {
+   padding: 5px;
+   .logo_img {
+      width: 50px;
+      height: 50px;
+      background-image: url('../../assets/img/Logo.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50% 20% / 10% 40%;
+   }
+}
+
+.right_block_container {
+   display: flex;
+}
+.auth {
+   height: 60px;
+   padding: 10px;
+   .auth_img {
+      width: 40px;
+      height: 40px;
+      background-image: url('../../assets/img/sign.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+.menu {
+   padding: 5px;
+   .menu_img {
+      width: 50px;
+      height: 50px;
+      background-image: url('../../assets/img/burger.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: white;
+      border-radius: 25% 10%;
+   }
+}
+
+

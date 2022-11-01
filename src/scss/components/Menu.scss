@@ -1,0 +1,19 @@
+.menu_list {
+   width: 40%;
+   position: absolute;
+   top: 60px;
+   right: 0;
+}
+.menu_list_conteiner {}
+
+.menu_list_element {
+   height: 30px;
+   background-color: #e6e6e6;
+   padding: 7px 0 0 0; 
+   .menu_list_element_text {
+      text-align: center; 
+   }
+   &:last-child {
+      border-bottom-left-radius: 40%;
+   }
+}

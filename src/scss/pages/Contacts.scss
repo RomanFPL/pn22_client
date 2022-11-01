@@ -1,0 +1,114 @@
+.contacts {
+   min-height: 1080px;
+   width: 60%;
+   background-color: #fe8238;
+   margin: 0 auto;
+   padding: 10px;
+}
+.contacts_container {
+   background-color: #209CEE;
+   padding: 5px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .6),
+   23px 0 20px -23px rgba(0, 0, 0, .6),
+   inset 0 0 40px rgba(0, 0, 0, .1);
+}
+.contacts_title {
+   height: 30px;
+   padding: 10px 0 0 0;
+   .contacts_title_text {
+   text-align: center;
+   font-size: 1.3em;
+   font-size: 900;
+   color: #fe8238;
+   }
+}
+
+.contacts_body {
+   margin: 10px 0 0 0;
+   .contacts_sections_text {
+      text-align: center;
+      font-size: 1em;
+      font-size: 900;
+      .contacts_description_section1 {   
+      }
+      .contacts_description_section2 {
+         margin: 10px 0 0 0;
+      }
+   }
+}
+
+
+.contacts_form {
+   margin: 10px 0 0 0;
+   .contacts_form_title {}
+   .contacts_form_title_text {
+      text-align: center;
+      font-size: 1em;
+      font-size: 900;   
+      color: #fe8238;
+   }
+   .contact_form_body {
+      margin: 10px 0 0 0;
+   }
+   .contact_form_input_email {
+      width: 50%;
+      height: 20px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 5%;
+      background-color: #e6e6e6;
+   }
+   .contact_form_input_text {
+      width: 50%;
+      height: 60px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 5%;
+      background-color: #e6e6e6;
+   }
+   .contact_form_button {
+      background-color: #fe8238;
+      cursor: pointer;
+      border-radius: 50% 20% / 10% 40%;
+      width: 80px;
+      height: 25px;
+      padding: 4px 0 0 0;
+      margin: 0 auto;
+      .contact_form_button_text {
+         text-align: center;
+      }
+   }
+}
+
+.contacts_social {
+   display: flex;
+   justify-content: space-around;
+   margin: 10px auto;
+   width: 100px;
+   .contacts_social_img_fb {
+      background-image: url('../../assets/img/facebook.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+   }
+   .contacts_social_img_telegram {
+      background-image: url('../../assets/img/telegram.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+   }
+   .contacts_social_img_linkedin {
+      background-image: url('../../assets/img/linkedin.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+   }
+}

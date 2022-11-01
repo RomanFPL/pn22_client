@@ -1,0 +1,61 @@
+.sort {
+}
+.sort_container {
+}
+
+
+.sort_close {}
+.sort_close_container {
+   width: 100px;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   .sort_close_img {
+      background-image: url('../../assets/img/sort.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30%;
+   }
+   .sort_close_text {
+      background-color: #fe8238;
+      width: 70%;
+      border-radius: 10% / 50%;
+      cursor: pointer;
+      .sort_close_text_content {
+         text-align: center;
+         margin: 7px auto;
+         color: white;
+         font-weight: 700;
+      }
+   }
+}
+
+.sort_open{
+   display: none;
+   .sort_list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 5px 0 0 0;
+      .sort_list_element {
+         width: 100px;
+         height: 20px;
+         background-color: #fe8238;
+         cursor: pointer;
+         &:first-child {
+            border-top-left-radius: 40%;
+         }
+         &:last-child {
+            border-bottom-right-radius: 40%;
+         }
+         .element_text {
+            text-align: center;
+            margin: 3px auto;
+            color: white;
+            font-weight: 400;
+            font-size: 0.9em;
+         }
+      }
+   }
+}

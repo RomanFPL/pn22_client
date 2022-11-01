@@ -1,0 +1,18 @@
+@import '../components/AllComponents.scss';
+@import '../pages/AllPages.scss';
+@import './Stylenull.scss';
+
+
+body {
+   max-width: 100%;
+	font-family: 'Noto Sans Display', sans-serif;
+
+}
+.wrapper {
+   max-width: 100%;
+
+}
+.content {
+   max-width: 100%;
+   background-color: #fe8238;
+}

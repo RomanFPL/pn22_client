@@ -1,0 +1,55 @@
+.account {
+   min-height: 1080px;
+   width: 60%;
+   background-color: #fe8238;
+   margin: 0 auto;
+   padding: 10px;
+}
+.account_container {
+   background-color: #209CEE;
+   padding: 10px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .6),
+   23px 0 20px -23px rgba(0, 0, 0, .6),
+   inset 0 0 40px rgba(0, 0, 0, .1);
+}
+.account_title {
+   padding: 10px 0 0 0;
+   .account_title_text {
+      text-align: center;
+      font-size: 1.3em;
+      font-size: 900;
+      color: #fe8238;
+   }
+}
+
+.account_userdata {
+   margin: 10px 0 0 0;
+   .account_userdata_login {
+      text-align: center;
+      font-size: 1em;
+      font-size: 900;
+   }
+   .account_userdata_email {
+      text-align: center;
+      font-size: 1em;
+      font-size: 900;
+      margin: 10px 0 0 0;
+   }
+}
+.account_setting {
+   padding: 10px;
+   margin: 0 auto;
+   width: 300px;
+   .account_setting_element {
+      width: 50px;
+      display: flex;
+      .account_setting_check1, .account_setting_check2, .account_setting_check3 {
+         margin: 5px auto;
+      }
+   }
+}         
+
+
+
+
