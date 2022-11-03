@@ -1,3 +1,9 @@
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import { Link } from "react-router-dom";
+
+
 function Contacts () {
    return ( 
       <div className="contacts">
@@ -24,9 +30,15 @@ function Contacts () {
                   </div>
                </div>
                <div className="contacts_social">
-                  <div className="contacts_social_img_fb"></div>
-                  <div className="contacts_social_img_telegram"></div>
-                  <div className="contacts_social_img_linkedin"></div>
+               <a href="https://facebook.com/igor.krotov89" target="_blank">
+                  <div className="contacts_social_img_fb"><FacebookIcon fontSize="inherit" color="inherit" /></div>
+               </a>
+               <a href="https://t.me/@kamrad911" target="_blank">
+                  <div className="contacts_social_img_telegram"><TelegramIcon fontSize="inherit" color="inherit" /></div>
+               </a>
+               <a href="https://www.linkedin.com/in/igor-krotov-76b02a144/" target="_blank">
+                  <div className="contacts_social_img_linkedin"><LinkedInIcon fontSize="inherit" color="inherit" /></div>
+               </a>
                </div>
          </div>
       </div>

@@ -20,6 +20,7 @@
       font-size: 1.3em;
       font-size: 900;
       color: #fe8238;
+      text-shadow: 0.5px 0.5px 0.5px black;
    }
    .support_description_text {
       margin: 10px 0 0 0;
@@ -35,6 +36,7 @@
    font-size: 1.3em;
    font-size: 900;
    color: #fe8238;
+   text-shadow: 0.5px 0.5px 0.5px black;
    }
 }
 
@@ -61,6 +63,7 @@
       font-size: 1em;
       font-size: 900;   
       color: #fe8238;
+      text-shadow: 0.5px 0.5px 0.5px black;
    }
    .contact_form_body {
       margin: 10px 0 0 0;
@@ -70,16 +73,24 @@
       height: 20px;
       margin: 0 auto;
       display: block;
-      border-radius: 5%;
-      background-color: #e6e6e6;
+      background-color: white;
+      border: 2px solid #313131;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+         -23px 0 20px -23px rgba(0, 0, 0, .6),
+         23px 0 20px -23px rgba(0, 0, 0, .6),
+         inset 0 0 40px rgba(0, 0, 0, .1);
    }
    .contact_form_input_text {
       width: 50%;
       height: 60px;
       margin: 10px auto;
       display: block;
-      border-radius: 5%;
-      background-color: #e6e6e6;
+      background-color: white;
+      border: 2px solid #313131;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+         -23px 0 20px -23px rgba(0, 0, 0, .6),
+         23px 0 20px -23px rgba(0, 0, 0, .6),
+         inset 0 0 40px rgba(0, 0, 0, .1);
    }
    .contact_form_button {
       background-color: #fe8238;
@@ -89,6 +100,7 @@
       height: 25px;
       padding: 4px 0 0 0;
       margin: 0 auto;
+      border: 2px solid #313131;
       .contact_form_button_text {
          text-align: center;
       }

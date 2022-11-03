@@ -2,6 +2,7 @@
    height: 60px;
    width: 100%;
    position: relative;
+   padding: 0 10px;
 }
 .heder_container {
    display: flex;
@@ -25,24 +26,39 @@
 .auth {
    height: 60px;
    padding: 10px;
+   display: flex;
    .auth_img {
       width: 40px;
       height: 40px;
-      background-image: url('../../assets/img/sign.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
+      font-size: 40px;
+      color: white;
+      // background-image: url('../../assets/img/sign.svg');
+      // background-repeat: no-repeat;
+      // background-size: cover;
+   }
+   .auth_account_img {
+      margin: 0 0 0 5px;
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      color: white;
    }
 }
 .menu {
    padding: 5px;
+   width: 60px;
+   height: 60px;
    .menu_img {
       width: 50px;
       height: 50px;
-      background-image: url('../../assets/img/burger.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
+      font-size: 50px;
+      // background-image: url('../../assets/img/burger.svg');
+      // background-repeat: no-repeat;
+      // background-size: cover;
       background-color: white;
       border-radius: 25% 10%;
+      
+      color: #1b72b5;
    }
 }
 

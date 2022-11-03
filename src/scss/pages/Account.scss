@@ -20,6 +20,7 @@
       font-size: 1.3em;
       font-size: 900;
       color: #fe8238;
+      text-shadow: 0.5px 0.5px 0.5px black;
    }
 }
 
@@ -40,10 +41,11 @@
 .account_setting {
    padding: 10px;
    margin: 0 auto;
-   width: 300px;
+   max-width: 300px;
    .account_setting_element {
-      width: 50px;
+      max-width: 250px;
       display: flex;
+      margin: 0 auto;
       .account_setting_check1, .account_setting_check2, .account_setting_check3 {
          margin: 5px auto;
       }

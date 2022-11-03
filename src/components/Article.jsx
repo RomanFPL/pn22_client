@@ -1,5 +1,10 @@
 import img from "../assets/img/img.jpg"
 import SimilarArticles from "../components/SimilarArticles"
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 
 function Article () {
    return ( 
@@ -17,9 +22,9 @@ function Article () {
                <h2 className="article_title_h2">conclusion</h2>
                <div className="article_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quisquam ipsum iste, illum sit consectetur tempora dolores voluptatibus suscipit sint officia similique facere minus, expedita aperiam, doloribus autem. Quia, facilis.</div>
                <div className="article_info_container">
-                  <div className="article_info_views"></div>
-                  <div className="article_info_likes"></div>
-                  <div className="article_info_favorites"></div>
+                  <div className="article_info_views"><RemoveRedEyeIcon fontSize="inherit" color="inherit" /></div>
+                  <div className="article_info_likes"><ThumbUpOffAltIcon fontSize="inherit" color="inherit" /></div>
+                  <div className="article_info_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                </div>
             </div>
          </div>

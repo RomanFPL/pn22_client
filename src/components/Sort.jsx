@@ -1,10 +1,12 @@
+import SortIcon from '@mui/icons-material/Sort';
+
 function Sort () {
    return ( 
       <div className="sort">
          <div className="sort_container">
             <div className="sort_close">
             <div className="sort_close_container">
-               <div className="sort_close_img"></div>
+               <div className="sort_close_img"><SortIcon fontSize="inherit" color="inherit" /></div>
                <div className="sort_close_text">
                   <div className="sort_close_text_content">sort</div>
                </div>

@@ -17,6 +17,7 @@
 
 .article_container_content {
    padding: 10px;
+   background-color: white;
    .article_title_h1 {
       margin: 10px 0 0 0;
       font-size: 2em;
@@ -39,27 +40,10 @@
       margin: 10px 0 0 0;
       display: flex;
       justify-content: flex-end;
-      padding: 10px;
-      .article_info_views {
-         width: 10%;
-         background-image: url('../../assets/img/view.svg');
-         background-repeat: no-repeat;
-         background-size: contain;
-         margin-right: 5px;
-      }
-      .article_info_likes {
-         width: 10%;
-         background-image: url('../../assets/img/like.svg');
-         background-repeat: no-repeat;
-         background-size: contain;
-         margin-right: 5px;
-      }
-      .article_info_favorites {
-         width: 10%;
-         background-image: url('../../assets/img/faforiteDisabled.svg');
-         background-repeat: no-repeat;
-         background-size: contain;
-         margin-right: 5px;
+      padding: 5px;
+      .article_info_views, .article_info_likes, .article_info_favorites {
+         font-size: 30px;
+         margin-right: 10px;
       }
    }
 }

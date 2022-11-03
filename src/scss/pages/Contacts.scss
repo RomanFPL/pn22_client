@@ -21,6 +21,7 @@
    font-size: 1.3em;
    font-size: 900;
    color: #fe8238;
+   text-shadow: 0.5px 0.5px 0.5px black;
    }
 }
 
@@ -47,6 +48,7 @@
       font-size: 1em;
       font-size: 900;   
       color: #fe8238;
+      text-shadow: 0.5px 0.5px 0.5px black;
    }
    .contact_form_body {
       margin: 10px 0 0 0;
@@ -56,16 +58,25 @@
       height: 20px;
       margin: 0 auto;
       display: block;
-      border-radius: 5%;
-      background-color: #e6e6e6;
+      background-color: white;
+      border: 2px solid #313131;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+         -23px 0 20px -23px rgba(0, 0, 0, .6),
+         23px 0 20px -23px rgba(0, 0, 0, .6),
+         inset 0 0 40px rgba(0, 0, 0, .1);
    }
    .contact_form_input_text {
       width: 50%;
       height: 60px;
       margin: 10px auto;
       display: block;
-      border-radius: 5%;
-      background-color: #e6e6e6;
+      border: 1px solid #313131;
+      background-color: white;
+      border: 2px solid #313131;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+         -23px 0 20px -23px rgba(0, 0, 0, .6),
+         23px 0 20px -23px rgba(0, 0, 0, .6),
+         inset 0 0 40px rgba(0, 0, 0, .1);
    }
    .contact_form_button {
       background-color: #fe8238;
@@ -75,6 +86,7 @@
       height: 25px;
       padding: 4px 0 0 0;
       margin: 0 auto;
+      border: 2px solid #313131;
       .contact_form_button_text {
          text-align: center;
       }
@@ -86,29 +98,22 @@
    justify-content: space-around;
    margin: 10px auto;
    width: 100px;
-   .contacts_social_img_fb {
-      background-image: url('../../assets/img/facebook.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
+   .contacts_social_img_fb, .contacts_social_img_telegram, .contacts_social_img_linkedin {
+      font-size: 30px;
       width: 30px;
       height: 30px;
       cursor: pointer;
    }
-   .contacts_social_img_telegram {
-      background-image: url('../../assets/img/telegram.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+   color: #313131;
+   :hover {
+      text-decoration: none;
+      color: white   ;
    }
-   .contacts_social_img_linkedin {
-      background-image: url('../../assets/img/linkedin.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
+   :active {
+      text-decoration: none;
    }
 }
