@@ -20,12 +20,12 @@ return (
             <Header />
             <Routes>
                <Route path="/" element={<Home />} />
-               <Route path="/categories" element={<Categories />} />
+               {/* <Route path="/categories" element={<Categories />} /> */}
                <Route path="/articlepage" element={<ArticlePage />} />
                <Route path="/contacts" element={<Contacts />} />
                <Route path="/support" element={<Support />} />
                <Route path="/login" element={<Login />} />
-               <Route path="/registration" element={<Registration />} />
+               {/* <Route path="/registration" element={<Registration />} /> */}
                <Route path="/account" element={<Account />} />
             </Routes>
             <Footer />

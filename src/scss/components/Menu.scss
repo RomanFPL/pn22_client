@@ -9,11 +9,13 @@
 .menu_list_element {
    height: 30px;
    background-color: #e6e6e6;
-   padding: 7px 0 0 0; 
+   padding: 7px 0 0 0;
+   cursor: pointer;
+   &:hover {
+      box-shadow: 0 0 0 2px #313131 inset, 0 0 0 4px white inset;
+      // background-color: white;
+   }
    .menu_list_element_text {
       text-align: center; 
-   }
-   &:last-child {
-      border-bottom-left-radius: 40%;
    }
 }

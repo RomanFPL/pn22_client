@@ -13,14 +13,14 @@ const commonDataSlice = createSlice({
    initialState,
 
    reducers: {
-      // setEmail: (state, action) => {
-      //    state.email = action.payload;
-      // },
+      setOpenMenu: (state, action) => {
+         state.isOpenMenu = action.payload;
+      },
    },
    extraReducers: {
    }
 });
 
-export const {  } = commonDataSlice.actions;
+export const { setOpenMenu } = commonDataSlice.actions;
 
 export default commonDataSlice.reducer;

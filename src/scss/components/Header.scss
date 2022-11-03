@@ -32,9 +32,9 @@
       height: 40px;
       font-size: 40px;
       color: white;
-      // background-image: url('../../assets/img/sign.svg');
-      // background-repeat: no-repeat;
-      // background-size: cover;
+      &:hover {
+         color: #313131;
+      }
    }
    .auth_account_img {
       margin: 0 0 0 5px;
@@ -42,23 +42,26 @@
       height: 40px;
       font-size: 40px;
       color: white;
+      &:hover {
+         color: #313131;
+      }
    }
 }
 .menu {
    padding: 5px;
    width: 60px;
    height: 60px;
+   cursor: pointer;
    .menu_img {
       width: 50px;
       height: 50px;
       font-size: 50px;
-      // background-image: url('../../assets/img/burger.svg');
-      // background-repeat: no-repeat;
-      // background-size: cover;
       background-color: white;
       border-radius: 25% 10%;
-      
       color: #1b72b5;
+      &:hover {
+         background-color: #313131;
+      }
    }
 }
 

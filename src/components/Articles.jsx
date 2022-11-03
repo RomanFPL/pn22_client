@@ -26,7 +26,7 @@ function Articles () {
                      <div className="section_footer_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                   </div>
                   <button className="section_footer_button">
-                     <button className="section_footer_button_text">sss</button>
+                     <div className="section_footer_button_text">sss</div>
                   </button>
                </div>
             </section>
@@ -47,7 +47,7 @@ function Articles () {
                      <div className="section_footer_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                   </div>
                   <button className="section_footer_button">
-                     <button className="section_footer_button_text">sss</button>
+                     <div className="section_footer_button_text">sss</div>
                   </button>
                </div>
             </section>
@@ -68,7 +68,7 @@ function Articles () {
                      <div className="section_footer_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                   </div>
                   <button className="section_footer_button">
-                     <button className="section_footer_button_text">sss</button>
+                     <div className="section_footer_button_text">sss</div>
                   </button>
                </div>
             </section>
@@ -89,7 +89,7 @@ function Articles () {
                      <div className="section_footer_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                   </div>
                   <button className="section_footer_button">
-                     <button className="section_footer_button_text">sss</button>
+                     <div className="section_footer_button_text">sss</div>
                   </button>
                </div>
             </section>
@@ -110,7 +110,7 @@ function Articles () {
                      <div className="section_footer_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                   </div>
                   <button className="section_footer_button">
-                     <button className="section_footer_button_text">sss</button>
+                     <div className="section_footer_button_text">sss</div>
                   </button>
                </div>
             </section>
@@ -131,7 +131,7 @@ function Articles () {
                      <div className="section_footer_favorites"><FavoriteBorderIcon fontSize="inherit" color="inherit" /></div>
                   </div>
                   <button className="section_footer_button">
-                     <button className="section_footer_button_text">sss</button>
+                     <div className="section_footer_button_text">sss</div>
                   </button>
                </div>
             </section>

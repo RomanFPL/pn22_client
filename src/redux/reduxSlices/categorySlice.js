@@ -4,7 +4,7 @@ import axios from 'axios';
 export const getArticles = createAsyncThunk("articles/getArticlesStatus", async(params, {dispatch}) => {
    const {} = params;
    try {
-      const { data } = await axios.get(`https://62bef7450bc9b1256164277e.mockapi.io/items?`);
+      const { data } = await axios.get(`https://62bef7450bc9b1256164277e.mockapi.io/p22_articles?`);
       return data
    } catch (e) {
       alert(e.response.data.message)
@@ -22,13 +22,13 @@ const initialState = {
 };
 
 const dataCategorySlice = createSlice({
-   name: "category",
+   name: "categoryData",
    initialState,
 
    reducers: {
-      // setEmail: (state, action) => {
-      //    state.email = action.payload;
-      // },
+      setCategory: (state, action) => {
+         state.category = action.payload;
+      },
    },
    extraReducers: {
    [getArticles.pending]: (state) => {
@@ -48,6 +48,6 @@ const dataCategorySlice = createSlice({
    }
 });
 
-export const {  } = dataCategorySlice.actions;
+export const { setCategory } = dataCategorySlice.actions;
 
 export default dataCategorySlice.reducer;
