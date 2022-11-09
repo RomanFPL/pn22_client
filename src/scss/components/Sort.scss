@@ -32,28 +32,28 @@
 }
 
 .sort_open{
-   display: none;
+   position: absolute;
+   right: 0px;
    .sort_list {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
       margin: 5px 0 0 0;
+      top: 5px;
       .sort_list_element {
-         width: 100px;
-         height: 20px;
-         background-color: #fe8238;
+         width: 200px;
+         height: 30px;
+         background-color: #e6e6e6;
          cursor: pointer;
-         &:first-child {
-            border-top-left-radius: 40%;
-         }
-         &:last-child {
-            border-bottom-right-radius: 40%;
+         &:hover {
+            box-shadow: 0 0 0 2px #313131 inset, 0 0 0 4px white inset;
+            // background-color: white;
          }
          .element_text {
             text-align: center;
-            margin: 3px auto;
-            color: white;
-            font-weight: 400;
+            margin: 8px auto;
+            color: #313131;
+            font-weight: 500;
             font-size: 0.9em;
          }
       }

@@ -1,4 +1,8 @@
+import { useSelector, useDispatch } from 'react-redux'
+
 function Account () {
+   const {user} = useSelector((state) => state.userdata);
+   console.log(user)
    return ( 
       <div className="account">
          <div className="account_container">
@@ -7,7 +11,7 @@ function Account () {
             </div>
             <div className="account_userdata">
                <div className="account_userdata_login">login: IgorK</div>
-               <div className="account_userdata_email">email: test@gmail.com</div>
+               <div className="account_userdata_email">email: {user ? user.email : null}</div>
             </div>
             <div className="account_setting">
                <div className="account_setting_element">

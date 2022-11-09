@@ -11,7 +11,7 @@
 
 
 .articles_section {
-   max-width: 400px;
+   max-width: 600px;
    margin: 0.5% auto;
    // background-color: #209CEE;
    // box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
@@ -33,7 +33,7 @@
       height: 20px;
       text-align: left;
       font-weight: 700;
-      color: black;
+      color: #313131;
       padding: 0 5px;
       margin: 5px 0 0 0;
       .section_title_text {
@@ -45,7 +45,7 @@
       height: 50px;
       text-align: left;
       font-weight: 700;
-      color: black;
+      color: #313131;
       padding: 0 5px;
       .section_description_text {
          margin: 5px 0;
@@ -54,7 +54,7 @@
    }
    }
    .articles_section_footer {
-      height: 30px;
+      height: 50px;
       display: flex;
       justify-content: space-between;
       padding: 5px;
@@ -64,19 +64,23 @@
          justify-content: space-between;
          .section_footer_views, .section_footer_likes, .section_footer_favorites {
             width: 30%;
+            padding: 7.5px 0;
             color: white;
-            font-size: 20px;
+            font-size: 25px;
          }
       }
       .section_footer_button {
-         width: 40%;
+         width: 20%;
          background-color: #209CEE;
          color: white;
-         padding: 0 0 3px 0;
+         // padding: 0 0 3px 0;
          border-radius: 10px 100px / 120px;
+         border: 2px solid white;
          .section_footer_button_text {
-            background-color: #209CEE;
+            // background-color: #209CEE;
             color: white;
+            font-size: 25px;
+            margin: 3px 0 0 0;
          }
       }
    }

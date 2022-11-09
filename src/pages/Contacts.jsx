@@ -17,7 +17,7 @@ function Contacts () {
                      <div className="contacts_description_section2">telegram: @sdssdsd</div>
                   </div>
                </div>
-               <div className="contacts_form">
+               <form className="contacts_form" method="post">
                   <div className="contacts_form_title">
                      <div className="contacts_form_title_text">Send me a massage</div>
                   </div>
@@ -28,7 +28,7 @@ function Contacts () {
                         <div className="contact_form_button_text">send</div>
                      </div>
                   </div>
-               </div>
+               </form>
                <div className="contacts_social">
                <a href="https://facebook.com/igor.krotov89" target="_blank">
                   <div className="contacts_social_img_fb"><FacebookIcon fontSize="inherit" color="inherit" /></div>

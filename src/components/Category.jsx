@@ -14,7 +14,7 @@ function Category () {
             <ul className="category_list">
                {categoryList.map((categoryName, i) =>
                <li className="category_list_element" key={i} onClick={() => {dispatch(setCategory(i))}}>
-                  <div className="element_text">categody1</div>
+                  <div className="element_text">{categoryList[i]}</div>
                </li>
                )}
             </ul>
