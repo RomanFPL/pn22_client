@@ -17,7 +17,6 @@ function Sort () {
    useEffect(() => {
       const clickOutside = (event) => {
          if (!event.path.includes(OpenSortRef.current)) {
-            console.log(isOpenSort);
             dispatch(setOpenSort(false));
          }
       };
@@ -27,18 +26,18 @@ function Sort () {
    }, [isOpenSort]);
 
    return ( 
-      <div className="sort" ref={OpenSortRef}>
+      <div className="sort">
          <div className="sort_container">
             <div className="sort_close">
-            <div className="sort_close_container" onClick={() => {dispatch(setOpenSort(!isOpenSort))}}>
-               <div className="sort_close_img"><SortIcon fontSize="inherit" color="inherit" /></div>
-               <div className="sort_close_text">
-                  <div className="sort_close_text_content">sort</div>
+               <div className="sort_close_container" ref={OpenSortRef} data-testid="button sort" onClick={(e) => {dispatch(setOpenSort(!isOpenSort)); e.stopPropagation();}}>
+                  <div className="sort_close_img"><SortIcon fontSize="inherit" color="inherit" /></div>
+                  <div className="sort_close_text">
+                     <div className="sort_close_text_content">sort</div>
+                  </div>
                </div>
             </div>
-            </div>
             {isOpenSort ?
-               <div className="sort_open">   
+               <div className="sort_open" data-testid="sort list">   
                   <ul className="sort_list">
                      {sortList.map((sortName, i) =>
                      <li className="sort_list_element" key={i} onClick={() => {dispatch(setSort(i))}}>

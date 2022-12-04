@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Account from './pages/Account';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Registration from './pages/Registration';
 
 import {Routes, Route} from 'react-router-dom';
 
@@ -27,6 +28,7 @@ return (
                <Route path="/contacts" element={<Contacts />} />
                <Route path="/support" element={<Support />} />
                <Route path="/login" element={<Login />} />
+               <Route path="/registration" element={<Registration />} />
                <Route path="/articlepage/:ArticleId" element={<ArticlePage />} />
                <Route path="/account" element={<Account />} />
             </Routes>

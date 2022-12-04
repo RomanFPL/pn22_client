@@ -17,7 +17,7 @@ function Header () {
    let navigate = useNavigate();
 
    const {isOpenMenu} = useSelector((state) => state.commondata);
-   const {isLogin} = useSelector((state) => state.userdata);
+   const {isLogin, isReg} = useSelector((state) => state.userdata);
 
 
    useEffect(() => {
@@ -50,8 +50,8 @@ function Header () {
                <Link to="/login"> 
                   <div className="auth_img" onClick={logOut}><LogoutIcon fontSize="inherit" color="inherit" /></div>
                </Link> :
-               <Link to="/login"> 
-                  <div className="auth_img"><LoginIcon fontSize="inherit" color="inherit" /></div>
+               <Link to={isReg ? "/login" : "/registration"}> 
+                  <div className="auth_img" data-testid="auth login"><LoginIcon fontSize="inherit" color="inherit" /></div>
                </Link>}
                {isLogin ?
                <Link to="/account"> 
@@ -59,7 +59,7 @@ function Header () {
                </Link>
                : null}
                </div>
-               <div className="menu" ref={OpenMenuRef} onClick={(e) => {dispatch(setOpenMenu(!isOpenMenu)); e.stopPropagation();}}>
+               <div className="menu" ref={OpenMenuRef} data-testid="button menu" onClick={(e) => {dispatch(setOpenMenu(!isOpenMenu)); e.stopPropagation();}}>
                   <div className="menu_img"><MenuOpenIcon fontSize="inherit" color="inherit" /></div>
                </div>
             </div>

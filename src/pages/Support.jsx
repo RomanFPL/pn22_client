@@ -1,6 +1,6 @@
 function Support () {
    return ( 
-      <div className="support">
+      <div className="support" data-testid="page support">
          <div className="support_container">
                <div className="support_description">
                   <div className="support_description_title">If you want to help</div>

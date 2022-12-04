@@ -5,12 +5,12 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@jest/types": "^29.3.1",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.12",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^29.2.0",
     "@types/lodash": "^4.14.186",
     "@types/node": "^18.11.3",
     "@types/qs": "^6.9.7",
@@ -34,7 +34,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^13.4.0",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.2.0"
   }
 }

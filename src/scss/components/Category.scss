@@ -12,6 +12,9 @@
    .category_list {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 380px) {
+         overflow-x: scroll;
+         }
       .category_list_element {
          width: 80px;
          background-color: #fe8238;

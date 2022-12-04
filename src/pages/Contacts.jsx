@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Contacts () {
    return ( 
-      <div className="contacts">
+      <div className="contacts" data-testid="page contacts">
          <div className="contacts_container">
                <div className="contacts_title">
                   <div className="contacts_title_text">Contacts</div>
@@ -30,13 +30,13 @@ function Contacts () {
                   </div>
                </form>
                <div className="contacts_social">
-               <a href="https://facebook.com/igor.krotov89" target="_blank">
+               <a href="https://facebook.com/igor.krotov89" target="_blank" data-testid="facebook link">
                   <div className="contacts_social_img_fb"><FacebookIcon fontSize="inherit" color="inherit" /></div>
                </a>
-               <a href="https://t.me/@kamrad911" target="_blank">
+               <a href="https://t.me/@kamrad911" target="_blank" data-testid="telegram link">
                   <div className="contacts_social_img_telegram"><TelegramIcon fontSize="inherit" color="inherit" /></div>
                </a>
-               <a href="https://www.linkedin.com/in/igor-krotov-76b02a144/" target="_blank">
+               <a href="https://www.linkedin.com/in/igor-krotov-76b02a144/" target="_blank" data-testid="linkedin link">
                   <div className="contacts_social_img_linkedin"><LinkedInIcon fontSize="inherit" color="inherit" /></div>
                </a>
                </div>

@@ -11,7 +11,7 @@ import { setIsLogin, setIsReg, setUser } from '../redux/reduxSlices/userSlice'
 function Home () {
    const dispatch = useDispatch();
    const {category, paginationNumber, sort, searchQuery} = useSelector((state) => state.categoryData);
-   const {isLogin, isReg, user} = useSelector((state) => state.userdata);
+   const {isLogin, isReg} = useSelector((state) => state.userdata);
 
    useEffect(() => {
       const data = localStorage.getItem("loginStatus");

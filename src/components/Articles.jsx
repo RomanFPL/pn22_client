@@ -1,4 +1,3 @@
-// import img from "../assets/img/img.jpg"
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -17,7 +16,7 @@ function Articles () {
       <main className="articles">
          <article className="articles_container">
             {articles.map((articleName, i) => 
-            <section className="articles_section" key={i}>
+            <section className="articles_section" key={i} data-testid="articles">
                <Link key={articleName.id} to={`/articlepage/${articleName.id}`}>
                   <div className="articles_section_head">
                      <img className="section_head_img" src={articleName.img} alt="img"></img>

@@ -6,7 +6,7 @@
 
 .sort_close {}
 .sort_close_container {
-   width: 100px;
+   width: 30px;
    height: 30px;
    display: flex;
    justify-content: space-between;
@@ -15,12 +15,13 @@
       color: white;
       font-size: 30px;
       margin: 0 5px 0 0;
-      width: 30%;
+      width: 30px;
    }
    .sort_close_text {
       background-color: #fe8238;
       width: 70%;
       border-radius: 10% / 50%;
+      display: none;
       cursor: pointer;
       .sort_close_text_content {
          text-align: center;

@@ -31,7 +31,7 @@ function Article () {
 
 
    return ( 
-      <div className="article">
+      <div className="article" data-testid="article">
          <div className="article_container">
             <img className="article_img" src={articlesFromLS.img} alt="img"></img>
             <div className="article_container_content">

@@ -19,7 +19,7 @@ function FormLogin () {
    }, [isLogin]);
 
    return ( 
-      <div className="formLogin">
+      <div className="formLogin" data-testid="page login">
          <div className="formLogin_container">
             <div className="formLogin_title">
                <div className="formLogin_title_text">Login</div>
@@ -37,7 +37,7 @@ function FormLogin () {
                   <label htmlFor="formLogin_setting_check1">sdsds sdsds dsd s ds</label>
             </div>
             <div className="formLogin_button">
-               <div className="formLogin_button_text" onClick={onSubmit}>Send</div>
+               <div className="formLogin_button_text" onClick={onSubmit}>Go Login</div>
             </div>
          </div>
       </div>

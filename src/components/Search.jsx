@@ -37,16 +37,17 @@ function Search () {
       <div className="search" ref={OpenSearchRef}>
          <div className="search_container">
             {isSearchOpen &&
-            <div className="search_input_container">
+            <div className="search_input_container" data-testid="search area">
                <input className="search_input"
                   placeholder='Search' 
                   type="search"
                   value={searchValue}
                   onChange={onChange}
+                  data-testid="search area input"
                ></input>
             </div>}
             <div className="search_button_container" onClick={(e) => {dispatch(setSearchOpen(!isSearchOpen)); e.stopPropagation();}}>
-               <button className="search_button"></button>
+               <button className="search_button" data-testid="search button"></button>
             </div>
          </div> 
       </div>
