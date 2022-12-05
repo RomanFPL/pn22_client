@@ -29,7 +29,8 @@ const renderRedux = (
    };
 };
 
-
+const data = localStorage.getItem("articlesLS");
+const dataArticles = data ? JSON.parse(data) : false;
 
 test("get article to articlePage", async () => {
    renderRedux(<Article />);

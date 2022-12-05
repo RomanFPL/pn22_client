@@ -33,7 +33,7 @@ function Article () {
    return ( 
       <div className="article" data-testid="article">
          <div className="article_container">
-            <img className="article_img" src={articlesFromLS.img} alt="img"></img>
+            {/* <img className="article_img" src={articlesFromLS.img} alt="img"></img> */}
             <div className="article_container_content">
                <h1 className="article_title_h1">{articlesFromLS.title}</h1>
                <h2 className="article_title_h2">{articlesFromLS.h1}</h2>
