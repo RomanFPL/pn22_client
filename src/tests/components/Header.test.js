@@ -29,8 +29,8 @@ const renderRedux = (
    };
 };
 
-const data = localStorage.getItem("authStatus");
-const statusAuth = data ? JSON.parse(data) : false;
+// const data = localStorage.getItem("authStatus");
+// const statusAuth = data ? JSON.parse(data) : false;
 
 describe("test Header", () => {
    it("menu is open", () => {
@@ -44,15 +44,15 @@ describe("test Header", () => {
    it("home to login", () => {
       renderRedux(<App />);
       expect(screen.queryByTestId("auth login")).toBeInTheDocument();
-      if (statusAuth) {
-         fireEvent.click(screen.queryByTestId("auth login"));
-         expect(screen.queryByTestId("page login")).toBeInTheDocument();}
+      // if (statusAuth) {
+      //    fireEvent.click(screen.queryByTestId("auth login"));
+      //    expect(screen.queryByTestId("page login")).toBeInTheDocument();}
       });
    it("home to login", () => {
       renderRedux(<App />);
       expect(screen.queryByTestId("auth login")).toBeInTheDocument();
-      if (!statusAuth) {
-         fireEvent.click(screen.queryByTestId("auth login"));
-         expect(screen.queryByTestId("page registration")).toBeInTheDocument();}
+      // if (!statusAuth) {
+      //    fireEvent.click(screen.queryByTestId("auth login"));
+      //    expect(screen.queryByTestId("page registration")).toBeInTheDocument();}
       });
 });

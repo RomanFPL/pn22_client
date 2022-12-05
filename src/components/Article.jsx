@@ -1,4 +1,4 @@
-import img from "../assets/img/img.jpg"
+// import img from "../assets/img/img.jpg"
 import SimilarArticles from "../components/SimilarArticles"
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
