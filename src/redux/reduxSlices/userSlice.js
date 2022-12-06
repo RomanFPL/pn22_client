@@ -64,7 +64,7 @@ const userDataSlice = createSlice({
       let setDataUserLS = JSON.stringify(state.user);
       localStorage.setItem("dataUserLS", setDataUserLS);
    },
-   [getUserData.pending]: (state) => {
+   [getUserData.rejected]: (state) => {
       state.user = [];
       state.status = "Error";
    },

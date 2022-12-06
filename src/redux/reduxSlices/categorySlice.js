@@ -68,7 +68,7 @@ const dataCategorySlice = createSlice({
       const articlesToLS = JSON.stringify(state.articles);
       localStorage.setItem("articlesLS", articlesToLS);
    },
-   [getArticles.articles]: (state) => {
+   [getArticles.rejected]: (state) => {
       state.articles = [];
       state.status = "Error";
    },
