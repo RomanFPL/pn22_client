@@ -5,9 +5,6 @@ export const getArticles = createAsyncThunk("articles/getArticlesStatus", async(
    const {category, paginationNumber, searchQuery, sort} = params;
    try {
       const { data } = await axios.get(`https://62bef7450bc9b1256164277e.mockapi.io/p22_articles?${searchQuery === "" ? `category=${category}` : ""}&page=${paginationNumber}&${searchQuery ? `&search=${searchQuery}` : ""}`);
-      // localStorage.setItem("articlesLS", data1);
-      // const data2 = JSON.parse(localStorage.getItem("articlesLS"));
-      // console.log(data1)
       let dataPagination = Array((Math.ceil(data.length/8))).fill(0).map((num, i) => num = i + 1);
       dispatch(setlistPagination(dataPagination));
       return data

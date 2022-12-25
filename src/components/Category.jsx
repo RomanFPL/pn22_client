@@ -1,10 +1,9 @@
 import Sort from "./Sort"
 
-import { useSelector, useDispatch } from 'react-redux'
-import { setCategory } from '../redux/reduxSlices/categorySlice' 
+import {useDispatch} from 'react-redux'
+import {setCategory} from '../redux/reduxSlices/categorySlice' 
 
 function Category () {
-   const category = useSelector((state) => state.categoryData.category);
    const dispatch = useDispatch();
 
    const categoryList = ["all", "work", "life", "relations"]

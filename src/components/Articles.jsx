@@ -5,8 +5,8 @@ import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import PetsIcon from '@mui/icons-material/Pets';
 
-import { useSelector, useDispatch } from 'react-redux'
-import { Link, useNavigate } from "react-router-dom";
+import {useSelector} from 'react-redux'
+import {Link, useNavigate} from "react-router-dom";
 
 function Articles () {
    const {articles} = useSelector((state) => state.categoryData);

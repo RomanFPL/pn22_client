@@ -1,9 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import debounce from 'lodash.debounce';
-import { useEffect, useRef, useCallback } from 'react';
+import {useEffect, useRef, useCallback} from 'react';
 
-import { setSearchQuery, setSearchValue } from '../redux/reduxSlices/categorySlice'
-import { setSearchOpen } from '../redux/reduxSlices/commonSlice'
+import {setSearchQuery, setSearchValue} from '../redux/reduxSlices/categorySlice'
+import {setSearchOpen} from '../redux/reduxSlices/commonSlice'
 
 function Search () {
    const {searchValue} = useSelector((state) => state.categoryData);

@@ -1,13 +1,13 @@
 import {useNavigate} from "react-router-dom";
 import {useSelector, useDispatch} from 'react-redux'
-import {setEmail, setPassword, setUser, getUserData} from '../redux/reduxSlices/userSlice'
+import {setEmail, setPassword, getUserData} from '../redux/reduxSlices/userSlice'
 import {useEffect} from 'react';
 
 function FormLogin () {
-   const {password, email, isLogin, isReg} = useSelector((state) => state.userdata);
-
    let navigate = useNavigate();
    const dispatch = useDispatch();
+   
+   const {password, email, isLogin, isReg} = useSelector((state) => state.userdata);
 
    const onSubmit = (e) => {
       dispatch(getUserData({email, password, isReg}));
@@ -34,7 +34,7 @@ function FormLogin () {
             </div>
             <div className="formLogin_setting_element">
                   <input type="checkbox" value="check3" className="formLogin_setting_check1"></input>
-                  <label htmlFor="formLogin_setting_check1">sdsds sdsds dsd s ds</label>
+                  <label htmlFor="formLogin_setting_check1">remember me pleace</label>
             </div>
             <div className="formLogin_button">
                <div className="formLogin_button_text" onClick={onSubmit}>Go Login</div>

@@ -4,12 +4,13 @@ import Pagination from "../components/Pagination";
 import Search from "../components/Search";
 
 import {useEffect} from "react"
-import { useSelector, useDispatch } from 'react-redux'
-import { getArticles } from '../redux/reduxSlices/categorySlice'
-import { setIsLogin, setIsReg, setUser } from '../redux/reduxSlices/userSlice'
+import {useSelector, useDispatch} from 'react-redux'
+import {getArticles} from '../redux/reduxSlices/categorySlice'
+import {setIsLogin, setIsReg, setUser} from '../redux/reduxSlices/userSlice'
 
 function Home () {
    const dispatch = useDispatch();
+   
    const {category, paginationNumber, sort, searchQuery} = useSelector((state) => state.categoryData);
    const {isLogin, isReg} = useSelector((state) => state.userdata);
 

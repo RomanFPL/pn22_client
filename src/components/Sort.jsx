@@ -1,18 +1,16 @@
 import SortIcon from '@mui/icons-material/Sort';
 
-import { useSelector, useDispatch } from 'react-redux'
-import { setSort } from '../redux/reduxSlices/categorySlice' 
-import { setOpenSort } from '../redux/reduxSlices/commonSlice' 
-import { useEffect, useRef } from 'react';
+import {useSelector, useDispatch} from 'react-redux'
+import {setSort} from '../redux/reduxSlices/categorySlice' 
+import {setOpenSort} from '../redux/reduxSlices/commonSlice' 
+import {useEffect, useRef} from 'react';
 
 function Sort () {
-   const {isOpenSort} = useSelector((state) => state.commondata);
-   const sortList = ["mostViews", "favorite", "mostLikes", "New"];
-
    const dispatch = useDispatch();
    const OpenSortRef = useRef();
 
-
+   const {isOpenSort} = useSelector((state) => state.commondata);
+   const sortList = ["mostViews", "favorite", "mostLikes", "New"];
 
    useEffect(() => {
       const clickOutside = (event) => {

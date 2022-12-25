@@ -1,7 +1,6 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import { Link } from "react-router-dom";
 
 
 function Contacts () {

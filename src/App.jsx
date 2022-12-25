@@ -1,6 +1,5 @@
 import './scss/main/MainLayout.scss';
 import Home from './pages/Home';
-import Categories from './pages/Categories';
 import ArticlePage from './pages/ArticlePage';
 import Contacts from './pages/Contacts';
 import Support from './pages/Support';
@@ -14,8 +13,6 @@ import {Routes, Route} from 'react-router-dom';
 
 
 function App() {
-
-
 return (
    <div className="App">
       <div className="wrapper">
@@ -23,7 +20,6 @@ return (
             <Header />
             <Routes>
                <Route path="/" element={<Home />} />
-               {/* <Route path="/categories" element={<Categories />} /> */}
                <Route path="/articlepage" element={<ArticlePage />} />
                <Route path="/contacts" element={<Contacts />} />
                <Route path="/support" element={<Support />} />

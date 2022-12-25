@@ -1,7 +1,7 @@
-import { render, screen} from "@testing-library/react";
+import {render, screen} from "@testing-library/react";
 import '@testing-library/jest-dom/extend-expect';
-import { Provider } from "react-redux";
-import { configureStore } from '@reduxjs/toolkit'
+import {Provider} from "react-redux";
+import {configureStore} from '@reduxjs/toolkit'
 import {BrowserRouter} from 'react-router-dom'
 
 import Category from "../../components/Category"

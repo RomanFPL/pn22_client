@@ -4,11 +4,11 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from 'react-redux';
-import { setOpenMenu } from '../redux/reduxSlices/commonSlice'
-import { setIsLogin, setIsReg } from '../redux/reduxSlices/userSlice'
-import { useEffect, useRef } from 'react';
+import {Link, useNavigate} from "react-router-dom";
+import {useDispatch, useSelector} from 'react-redux';
+import {setOpenMenu} from '../redux/reduxSlices/commonSlice'
+import {setIsLogin, setIsReg} from '../redux/reduxSlices/userSlice'
+import {useEffect, useRef} from 'react';
 
 
 function Header () {

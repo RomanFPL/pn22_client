@@ -1,6 +1,6 @@
 
-import { useSelector, useDispatch } from 'react-redux'
-import { setlistPagination, setPaginationNumber } from '../redux/reduxSlices/categorySlice'
+import {useSelector, useDispatch} from 'react-redux'
+import {setPaginationNumber} from '../redux/reduxSlices/categorySlice'
 import {useEffect} from "react"
 
 function Pagination () {

@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import {useSelector, useDispatch} from 'react-redux'
-import {setEmail, setPassword, setUser, getUserData} from '../redux/reduxSlices/userSlice'
+import {setEmail, setPassword, getUserData} from '../redux/reduxSlices/userSlice'
 import {useEffect} from 'react';
 
 function FormReg () {
@@ -34,7 +34,7 @@ function FormReg () {
             </div>
             <div className="formLogin_setting_element">
                   <input type="checkbox" value="check3" className="formLogin_setting_check1"></input>
-                  <label htmlFor="formLogin_setting_check1">sdsds sdsds dsd s ds</label>
+                  <label htmlFor="formLogin_setting_check1">remember me pleace</label>
             </div>
             <div className="formLogin_button">
                <div className="formLogin_button_text" onClick={onSubmit}>Go Reg</div>

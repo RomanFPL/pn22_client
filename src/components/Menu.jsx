@@ -1,12 +1,10 @@
 
-import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from 'react-redux'
-
+import {Link} from "react-router-dom";
+import {useSelector} from 'react-redux'
 
 
 function Menu () {
-
-   const {isLogin, isReg} = useSelector((state) => state.userdata);
+   const {isLogin} = useSelector((state) => state.userdata);
 
    return ( 
       <menu className="menu_list" data-testid="menu list">

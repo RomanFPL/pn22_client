@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import categoryData from './reduxSlices/categorySlice'
 import userdata from './reduxSlices/userSlice'
 import commondata from './reduxSlices/commonSlice'
+import articleData from './reduxSlices/articleSlice'
 
 
 export const store = configureStore({
@@ -9,5 +10,6 @@ export const store = configureStore({
    categoryData,
    userdata,
    commondata,
+   articleData,
    },
 })

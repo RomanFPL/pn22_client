@@ -43,11 +43,12 @@
    margin: 0 auto;
    max-width: 300px;
    .account_setting_element {
-      max-width: 250px;
-      display: flex;
+      max-width: 100px;
       margin: 0 auto;
+      display: flex;
       .account_setting_check1, .account_setting_check2, .account_setting_check3 {
-         margin: 5px auto;
+         
+         margin: 0 auto;
       }
    }
 }         
