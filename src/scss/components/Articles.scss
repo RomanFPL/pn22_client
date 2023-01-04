@@ -9,15 +9,9 @@
 
 }
 
-
 .articles_section {
    max-width: 600px;
    margin: 0.5% auto;
-   // background-color: #209CEE;
-   // box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
-   //          -23px 0 20px -23px rgba(0, 0, 0, .6),
-   //          23px 0 20px -23px rgba(0, 0, 0, .6),
-   //          inset 0 0 40px rgba(0, 0, 0, .1);
    .articles_section_head {
 
       .section_head_img {
@@ -38,7 +32,6 @@
       margin: 5px 0 0 0;
       .section_title_text {
          overflow: hidden;
-         // text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.726);
       }
    }
    .section_description {
@@ -50,7 +43,6 @@
       .section_description_text {
          margin: 5px 0;
          overflow: hidden;
-         // text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.726);
    }
    }
    .articles_section_footer {
@@ -73,11 +65,9 @@
          width: 20%;
          background-color: #209CEE;
          color: white;
-         // padding: 0 0 3px 0;
          border-radius: 10px 100px / 120px;
          border: 2px solid white;
          .section_footer_button_text {
-            // background-color: #209CEE;
             color: white;
             font-size: 25px;
             margin: 3px 0 0 0;

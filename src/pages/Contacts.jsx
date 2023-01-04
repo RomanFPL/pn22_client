@@ -1,9 +1,13 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 
+
+import {useNavigate} from "react-router-dom";
 
 function Contacts () {
+   let navigate = useNavigate();
    return ( 
       <div className="contacts" data-testid="page contacts">
          <div className="contacts_container">
@@ -40,6 +44,8 @@ function Contacts () {
                </a>
                </div>
          </div>
+         <KeyboardReturnIcon sx={{ position: 'fixed', bottom: "70px", right: "25px", backgroundColor: "#209CEE", borderRadius: "5px", fontSize: "40px", color: "white", cursor: "pointer" }}
+         onClick={() => navigate(-1)} />
       </div>
    );
 }

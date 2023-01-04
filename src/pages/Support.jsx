@@ -1,4 +1,9 @@
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
+import {useNavigate} from "react-router-dom";
+
 function Support () {
+   let navigate = useNavigate();
+   
    return ( 
       <div className="support" data-testid="page support">
          <div className="support_container">
@@ -28,6 +33,8 @@ function Support () {
                   </div>
                </div>
          </div>
+         <KeyboardReturnIcon sx={{ position: 'fixed', bottom: "70px", right: "25px", backgroundColor: "#209CEE", borderRadius: "5px", fontSize: "40px", color: "white", cursor: "pointer" }}
+         onClick={() => navigate(-1)} />
       </div>
    );
 }

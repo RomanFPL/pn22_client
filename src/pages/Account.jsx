@@ -1,6 +1,11 @@
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
+
 import {useSelector} from 'react-redux'
+import {useNavigate} from "react-router-dom";
 
 function Account () {
+   let navigate = useNavigate();
+   
    const {user} = useSelector((state) => state.userdata);
 
    return ( 
@@ -10,7 +15,7 @@ function Account () {
                <div className="account_title_text">Account</div>
             </div>
             <div className="account_userdata">
-               <div className="account_userdata_login">Name: Your Name</div>
+               <div className="account_userdata_login">Name: {user ? user.name : null}</div>
                <div className="account_userdata_email">email: {user ? user.email : null}</div>
             </div>
             <div className="account_setting">
@@ -28,6 +33,8 @@ function Account () {
                </div>
             </div>
          </div>
+         <KeyboardReturnIcon sx={{ position: 'fixed', bottom: "70px", right: "25px", backgroundColor: "#209CEE", borderRadius: "5px", fontSize: "40px", color: "white", cursor: "pointer" }}
+         onClick={() => navigate(-1)} />
       </div>
    );
 }

@@ -1,0 +1,22 @@
+.serverDontResponse {
+
+}
+.serverDontResponse_container {
+   margin: 30px auto;
+   width: 50%;
+   height: 500px;
+   .serverDontResponse_title {
+      height: 20px;
+      text-align: center;
+      font-size: 1.5em;
+   }
+   .serverDontResponse_body {
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+      background-image: url('../../../assets/img/Logo.png');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+   }
+}

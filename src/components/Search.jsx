@@ -1,9 +1,11 @@
+import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+
 import {useDispatch, useSelector} from 'react-redux';
 import debounce from 'lodash.debounce';
 import {useEffect, useRef, useCallback} from 'react';
-
 import {setSearchQuery, setSearchValue} from '../redux/reduxSlices/categorySlice'
 import {setSearchOpen} from '../redux/reduxSlices/commonSlice'
+
 
 function Search () {
    const {searchValue} = useSelector((state) => state.categoryData);
@@ -39,7 +41,7 @@ function Search () {
             {isSearchOpen &&
             <div className="search_input_container" data-testid="search area">
                <input className="search_input"
-                  placeholder='Search' 
+                  placeholder='Search article' 
                   type="search"
                   value={searchValue}
                   onChange={onChange}
@@ -47,7 +49,9 @@ function Search () {
                ></input>
             </div>}
             <div className="search_button_container" onClick={(e) => {dispatch(setSearchOpen(!isSearchOpen)); e.stopPropagation();}}>
-               <button className="search_button" data-testid="search button"></button>
+               <button className="search_button" data-testid="search button">
+                  <ManageSearchIcon sx={{ fontSize: "2.5em", backgroundColor: "#209CEE", color: "white" }} />
+               </button>
             </div>
          </div> 
       </div>

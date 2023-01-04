@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import PetsIcon from '@mui/icons-material/Pets';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import {useSelector} from 'react-redux'
 import {Link, useNavigate} from "react-router-dom";
@@ -14,6 +15,7 @@ function Articles () {
 
    return ( 
       <main className="articles">
+         {articles.length ?
          <article className="articles_container">
             {articles.map((articleName, i) => 
             <section className="articles_section" key={i} data-testid="articles">
@@ -41,6 +43,7 @@ function Articles () {
             </section>
             )}
          </article>
+         : <CircularProgress sx={{ color: "white", marginTop: "30px", marginRight: "45%", marginLeft: "45%", marginBottom: "30px"}} />}
       </main>
    );
 }

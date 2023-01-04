@@ -4,6 +4,8 @@
    background-color: #fe8238;
    margin: 0 auto;
    padding: 10px;
+   @media (max-width: 639px) {
+      width: 85%;}
 }
 .formLogin_container {
    background-color: #209CEE;
@@ -27,6 +29,8 @@
 .formLogin_body {
    width: 50%;
    margin: 10px auto;
+   @media (max-width: 639px) {
+      width: 60%;}
    .formLogin_body_input {
 
       .formLogin_body_input_email {

@@ -4,10 +4,10 @@ import {createSlice} from '@reduxjs/toolkit'
 const initialState = {
    menuBurger: 0,
    isOpenMenu: false,
-   isOpenSearch: false,
+   // isOpenSearch: false,
    isOpenSort: false,
    isSearchOpen: false,
-   dataSupport: {},
+   // dataSupport: {},
 };
 
 const commonDataSlice = createSlice({

@@ -22,9 +22,9 @@ const initialState = {
    paginationNumber: 0,
    searchQuery: "",
    searchValue: "",
-   like: false,
-   favorite: false,
-   view: 0,
+   // like: false,
+   // favorite: false,
+   // view: 0,
 };
 
 const dataCategorySlice = createSlice({

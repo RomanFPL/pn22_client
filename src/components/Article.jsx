@@ -4,10 +4,12 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import CircularProgress from '@mui/material/CircularProgress';
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 
 
 import {useSelector, useDispatch} from 'react-redux'
-import {useParams} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 import {useEffect} from 'react';
 import {getArticles, setArticlesFromLS} from "../redux/reduxSlices/categorySlice"
 import {setIsFavorite, setIsLike} from "../redux/reduxSlices/articleSlice"
@@ -16,6 +18,7 @@ import {setIsFavorite, setIsLike} from "../redux/reduxSlices/articleSlice"
 function Article () {
    let {ArticleId} = useParams();
    const dispatch = useDispatch();
+   let navigate = useNavigate();
 
    const {islike, isfavorite} = useSelector((state) => state.articleData);
    const {articles, articlesFromLS} = useSelector((state) => state.categoryData);
@@ -68,8 +71,10 @@ function Article () {
                </div>
             </div>
          </div>
-         : "Loading"}
+         : <CircularProgress sx={{ color: "white", marginTop: "30px", marginRight: "45%", marginLeft: "45%", marginBottom: "30px"}} />}
          <SimilarArticles />
+         <KeyboardReturnIcon sx={{ position: 'fixed', bottom: "70px", right: "25px", backgroundColor: "#209CEE", borderRadius: "5px", fontSize: "40px", color: "white", cursor: "pointer" }}
+         onClick={() => navigate(-1)} />
       </div>
    );
 }

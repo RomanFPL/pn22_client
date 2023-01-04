@@ -8,6 +8,7 @@ import Account from './pages/Account';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Registration from './pages/Registration';
+import ServerDontResponse from './components/errorPages/serverDontResponse';
 
 import {Routes, Route} from 'react-router-dom';
 
@@ -27,6 +28,7 @@ return (
                <Route path="/registration" element={<Registration />} />
                <Route path="/articlepage/:ArticleId" element={<ArticlePage />} />
                <Route path="/account" element={<Account />} />
+               <Route path="/error" element={<ServerDontResponse />} />
             </Routes>
             <Footer />
          </div>
