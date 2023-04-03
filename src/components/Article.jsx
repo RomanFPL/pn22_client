@@ -36,43 +36,46 @@ function Article () {
          };
          fetchArticlesData();
    }, [category, paginationNumber, searchQuery, sort])
-   
+   // console.log(articlePage.category)
 
    return ( 
       <div className="article" data-testid="article">
          {articlePage ?
-         <div className="article_container">
-            <img className="article_img" src={articlePage.img} alt="img"></img>
-            <div className="article_container_content">
-               <h1 className="article_title_h1">{articlePage.title}</h1>
-               <h2 className="article_title_h2">{articlePage.h1}</h2>
-               <div className="article_description">{articlePage.text1}</div>
-               <h2 className="article_title_h2">{articlePage.h2}</h2>
-               <div className="article_description">{articlePage.text2}</div>
-               <h2 className="article_title_h2">{articlePage.h3}</h2>
-               <div className="article_description">{articlePage["text3.1"]}</div>
-               <div className="article_description">{articlePage["text3.2"]}</div>
-               <div className="article_description">{articlePage["text3.3"]}</div>
-               <div className="article_description">{articlePage["text3.4"]}</div>
-               <div className="article_description">{articlePage["text3.5"]}</div>
-               <div className="article_description">{articlePage["text3.6"]}</div>
-               <div className="article_description">{articlePage["text3.7"]}</div>
-               <div className="article_description">{articlePage["text3.8"]}</div>
-               <h2 className="article_title_h2">{articlePage.h4}</h2>
-               <div className="article_description">{articlePage["text4.1"]}</div>
-               <div className="article_description">{articlePage["text4.2"]}</div>
-               <div className="article_description">{articlePage["text4.3"]}</div>
-               <div className="article_description">{articlePage["text4.4"]}</div>
-               <div className="article_description">{articlePage["text4.5"]}</div>
-               <div className="article_info_container">
-                  <div className="article_info_views"><RemoveRedEyeIcon fontSize="inherit" color="inherit" /></div>
-                  <div className="article_info_likes" onClick={() => dispatch(setIsLike(!islike))}>{islike ? <ThumbUpAltIcon fontSize="inherit" color="inherit" /> : <ThumbUpOffAltIcon fontSize="inherit" color="inherit" />}</div>
-                  <div className="article_info_favorites" onClick={() => dispatch(setIsFavorite(!isfavorite))}>{isfavorite ? <FavoriteIcon fontSize="inherit" color="inherit" /> : <FavoriteBorderIcon fontSize="inherit" color="inherit" />}</div>
+         <>
+            <div className="article_container">
+               <img className="article_img" src={articlePage.img} alt="img"></img>
+               <div className="article_container_content">
+                  <h1 className="article_title_h1">{articlePage.title}</h1>
+                  <h2 className="article_title_h2_first">{articlePage.h1}</h2>
+                  <div className="article_description">{articlePage.text1}</div>
+                  <h2 className="article_title_h2">{articlePage.h2}</h2>
+                  <div className="article_description">{articlePage.text2}</div>
+                  <h2 className="article_title_h2">{articlePage.h3}</h2>
+                  <div className="article_description">{articlePage["text3.1"]}</div>
+                  <div className="article_description">{articlePage["text3.2"]}</div>
+                  <div className="article_description">{articlePage["text3.3"]}</div>
+                  <div className="article_description">{articlePage["text3.4"]}</div>
+                  <div className="article_description">{articlePage["text3.5"]}</div>
+                  <div className="article_description">{articlePage["text3.6"]}</div>
+                  <div className="article_description">{articlePage["text3.7"]}</div>
+                  <div className="article_description">{articlePage["text3.8"]}</div>
+                  <h2 className="article_title_h2">{articlePage.h4}</h2>
+                  <div className="article_description">{articlePage["text4.1"]}</div>
+                  <div className="article_description">{articlePage["text4.2"]}</div>
+                  <div className="article_description">{articlePage["text4.3"]}</div>
+                  <div className="article_description">{articlePage["text4.4"]}</div>
+                  <div className="article_description">{articlePage["text4.5"]}</div>
+                  <div className="article_info_container">
+                     <div className="article_info_views"><RemoveRedEyeIcon fontSize="inherit" color="inherit" /></div>
+                     <div className="article_info_likes" onClick={() => dispatch(setIsLike(!islike))}>{islike ? <ThumbUpAltIcon fontSize="inherit" color="inherit" /> : <ThumbUpOffAltIcon fontSize="inherit" color="inherit" />}</div>
+                     <div className="article_info_favorites" onClick={() => dispatch(setIsFavorite(!isfavorite))}>{isfavorite ? <FavoriteIcon fontSize="inherit" color="inherit" /> : <FavoriteBorderIcon fontSize="inherit" color="inherit" />}</div>
+                  </div>
                </div>
             </div>
-         </div>
+            <SimilarArticles articlePage={articlePage} />
+         </>
          : <CircularProgress sx={{ color: "white", marginTop: "30px", marginRight: "45%", marginLeft: "45%", marginBottom: "30px"}} />}
-         <SimilarArticles />
+         
          <KeyboardReturnIcon sx={{ position: 'fixed', bottom: "70px", right: "25px", backgroundColor: "#209CEE", borderRadius: "5px", fontSize: "40px", color: "white", cursor: "pointer" }}
          onClick={() => navigate(-1)} />
       </div>

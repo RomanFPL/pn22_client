@@ -1,6 +1,4 @@
 function serverDontResponse () {
-   
-   
    return ( 
       <div className="serverDontResponse">
          <div className="serverDontResponse_container">

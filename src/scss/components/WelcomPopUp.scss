@@ -1,0 +1,67 @@
+.welcomModal {
+   width: 40%;
+   position: fixed;
+   top: 20%;
+   left: 30%;
+   background-color: #209CEE;
+   padding: 10px 0 30px 0;
+   border-radius: 10px;
+   border: solid white 2px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .6),
+   23px 0 20px -23px rgba(0, 0, 0, .6),
+   inset 0 0 40px rgba(0, 0, 0, .1);
+   @media (max-width: 1000px) {
+      width: 70%;
+      left: 15%;
+   }
+   .welcomModal_container {
+      .welcomModal_title {
+         padding: 5px;
+         .welcomModal_title_text {
+            text-align: center;
+            font-weight: 700;
+            font-size: 2em;
+            width: 70%;
+            margin: 0 auto;
+         }
+         .welcomModal_close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+         }
+      }
+      .welcomModal_img_container {
+         margin: 10px auto;
+         width: 60%;
+         height: 30%;
+         .welcomModal_img_element {
+            display: block;
+            width: 200px;
+            height: 250px;
+            margin: 0 auto;
+            background-image: url('../../assets/img/welcome.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .6),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+         }
+      }
+      .welcomModal_description {
+         padding: 5px;
+         .welcomModal_description_text {
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.5em;
+         }
+      }
+   }
+}
+
+
+
+
+

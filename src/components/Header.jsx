@@ -19,17 +19,19 @@ function Header () {
    const {isOpenMenu} = useSelector((state) => state.commondata);
    const {isLogin, isReg} = useSelector((state) => state.userdata);
 
-
    useEffect(() => {
-      const clickOutside = (event) => {
-         if (!event.path.includes(OpenMenuRef.current)) {
-            dispatch(setOpenMenu(false));
-         }
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+         document.removeEventListener('click', handleClickOutside);
       };
-      isOpenMenu && document.body.addEventListener("click", clickOutside);
-      !isOpenMenu && document.body.removeEventListener("click", clickOutside);
-      return () => {document.body.removeEventListener("click", clickOutside);}
    }, [isOpenMenu]);
+   
+   const handleClickOutside = (event) => {
+      const isClickInsideBlock = OpenMenuRef.current && OpenMenuRef.current.contains(event.target);
+      if (!isClickInsideBlock) {
+         dispatch(setOpenMenu(false))
+      }
+   };
 
    const logOut = () => {
       dispatch(setIsLogin(false));
@@ -70,3 +72,23 @@ function Header () {
 }
 
 export default Header;
+
+
+
+
+
+
+
+
+
+   // useEffect(() => {
+   //    const clickOutside = (event) => {
+   //       if (!event.path.includes(OpenMenuRef.current)) {
+   //          event.path.includes(OpenMenuRef.current)
+   //          dispatch(setOpenMenu(false));
+   //       } else {event.path.includes(OpenMenuRef.current)}
+   //    };
+   //    isOpenMenu && document.body.addEventListener("click", clickOutside);
+   //    !isOpenMenu && document.body.removeEventListener("click", clickOutside);
+   //    return () => {document.body.removeEventListener("click", clickOutside);}
+   // }, [isOpenMenu]);

@@ -9,6 +9,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Registration from './pages/Registration';
 import ServerDontResponse from './components/errorPages/serverDontResponse';
+import Portal from "./components/modals/Portal"
 
 import {Routes, Route} from 'react-router-dom';
 
@@ -31,6 +32,7 @@ return (
                <Route path="/error" element={<ServerDontResponse />} />
             </Routes>
             <Footer />
+            <Portal />
          </div>
       </div>
    </div>

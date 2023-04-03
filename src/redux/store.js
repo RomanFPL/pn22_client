@@ -3,6 +3,8 @@ import categoryData from './reduxSlices/categorySlice'
 import userdata from './reduxSlices/userSlice'
 import commondata from './reduxSlices/commonSlice'
 import articleData from './reduxSlices/articleSlice'
+import modalsData from './reduxSlices/modalsSlice'
+
 
 
 export const store = configureStore({
@@ -11,5 +13,6 @@ export const store = configureStore({
    userdata,
    commondata,
    articleData,
+   modalsData,
    },
 })

@@ -4,17 +4,27 @@
    top: 60px;
    right: 0;
 }
-.menu_list_conteiner {}
+.menu_list_container {
+   position: absolute;
+   right: 10px;
+}
 
 .menu_list_element {
    height: 30px;
-   background-color: #e6e6e6;
-   padding: 7px 0 0 0;
+   width: 130px;
+   margin: 2px 0;
+   padding: 6px 5px 0 5px;
+   border-radius: 6px 2px 6px 6px;
+   color: white;
+   background-color: #fe8238;
+   font-size: 1em;
+   border: 2px solid white;
    cursor: pointer;
    &:hover {
-      box-shadow: 0 0 0 2px #313131 inset, 0 0 0 4px white inset;
+      border: 2px solid black;
    }
    .menu_list_element_text {
       text-align: center; 
+      // margin: 5px 0 0 0;
    }
 }

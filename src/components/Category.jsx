@@ -1,18 +1,20 @@
 import Sort from "./Sort"
 
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import {setCategory} from '../redux/reduxSlices/categorySlice' 
 
 function Category () {
    const dispatch = useDispatch();
-
-   const categoryList = ["all", "work", "life", "relations"]
+   const {category} = useSelector((state) => state.categoryData);
+console.log(category)
+   const categoryList = ["All", "WORK", "LIFE", "RELATIONS"];
+   
    return ( 
       <nav className="navigate">
          <div className="navigate_container">   
             <ul className="category_list">
                {categoryList.map((categoryName, i) =>
-               <li className="category_list_element" key={i} onClick={() => {dispatch(setCategory(i))}}>
+               <li className={category == i ? "category_list_element show_active_category" : "category_list_element"} key={i} onClick={() => {dispatch(setCategory(i))}}>
                   <div className="element_text">{categoryList[i]}</div>
                </li>
                )}
@@ -22,5 +24,4 @@ function Category () {
       </nav>
    );
 }
-
 export default Category;
