@@ -5,7 +5,7 @@ import {configureStore} from '@reduxjs/toolkit'
 import {BrowserRouter} from 'react-router-dom'
 
 
-import Header from "../../common_components/header/Header"
+import Header from "./Header"
 import App from "../../App"
 
 import categoryData from "../../redux/reduxSlices/categorySlice"
@@ -14,7 +14,7 @@ import commondata from "../../redux/reduxSlices/commonSlice"
 import articleData from "../../redux/reduxSlices/articleSlice"
 import modalsData from "../../redux/reduxSlices/modalsSlice"
 
-jest.mock("../../common_components/modals/Portal", () => () => null);
+jest.mock("../../commonComponents/modals/Portal", () => () => null);
 
 const renderRedux = (
    component,

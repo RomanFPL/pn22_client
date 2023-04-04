@@ -7,11 +7,11 @@ import Contacts from './pages/contacts/Contacts';
 import Support from './pages/support/Support';
 import Login from './pages/login/Login';
 import Account from './pages/account/Account';
-import Header from './common_components/header/Header';
-import Footer from './common_components/footer/Footer';
+import Header from './commonComponents/header/Header';
+import Footer from './commonComponents/footer/Footer';
 import Registration from './pages/registration/Registration';
-import ServerDontResponse from './common_components/errorPages/serverDontResponse/serverDontResponse';
-import Portal from "./common_components/modals/Portal"
+import ServerDontResponse from './commonComponents/errorPages/serverDontResponse/serverDontResponse';
+import Portal from "./commonComponents/modals/Portal"
 
 import {Routes, Route} from 'react-router-dom';
 
