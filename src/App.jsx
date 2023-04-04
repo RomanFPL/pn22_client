@@ -1,20 +1,22 @@
-import './scss/main/MainLayout.scss';
-import Home from './pages/Home';
-import ArticlePage from './pages/ArticlePage';
-import Contacts from './pages/Contacts';
-import Support from './pages/Support';
-import Login from './pages/Login';
-import Account from './pages/Account';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Registration from './pages/Registration';
-import ServerDontResponse from './components/errorPages/serverDontResponse';
-import Portal from "./components/modals/Portal"
+import './scss/MainLayout.scss';
+
+
+import Home from './pages/home/Home';
+import ArticlePage from './pages/articlePage/ArticlePage';
+import Contacts from './pages/contacts/Contacts';
+import Support from './pages/support/Support';
+import Login from './pages/login/Login';
+import Account from './pages/account/Account';
+import Header from './common_components/header/Header';
+import Footer from './common_components/footer/Footer';
+import Registration from './pages/registration/Registration';
+import ServerDontResponse from './common_components/errorPages/serverDontResponse/serverDontResponse';
+import Portal from "./common_components/modals/Portal"
 
 import {Routes, Route} from 'react-router-dom';
 
-
 function App() {
+
 return (
    <div className="App">
       <div className="wrapper">

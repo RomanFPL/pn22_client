@@ -1,0 +1,16 @@
+@import '../../src/common_components/AllCommonComponents.scss';
+@import '../../src/pages/AllPages.scss';
+
+body {
+   max-width: 100%;
+	font-family: 'Noto Sans Display', sans-serif;
+   overflow-y: scroll;
+}
+.wrapper {
+   max-width: 100%;
+
+}
+.content {
+   max-width: 100%;
+   background-color: #fe8238;
+}
