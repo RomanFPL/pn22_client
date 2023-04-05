@@ -4,7 +4,6 @@ import {useSelector, useDispatch} from 'react-redux'
 import {setSort} from '../../../../redux/reduxSlices/categorySlice' 
 import {setOpenSort} from '../../../../redux/reduxSlices/commonSlice' 
 import {useEffect, useRef} from 'react';
-import {handleClickOutside} from "../../../../utils/handleClickOutside"
 
 function Sort () {
    const dispatch = useDispatch();
@@ -13,10 +12,17 @@ function Sort () {
    const {isOpenSort} = useSelector((state) => state.commondata);
    const sortList = ["mostViews", "favorite", "mostLikes", "New"];
 
+   const handleClickOutside = (event) => {
+      const isClickInsideBlock = OpenSortRef.current && OpenSortRef.current.contains(event.target);
+      if (!isClickInsideBlock) {
+         dispatch(setOpenSort(false))
+      }
+   };
+
    useEffect(() => {
-      handleClickOutside(OpenSortRef, 'click', dispatch, setOpenSort(false))
+      if(isOpenSort) {document.addEventListener('click', handleClickOutside)}
       return () => {
-         handleClickOutside(OpenSortRef, 'click', dispatch, setOpenSort(false))
+         document.removeEventListener('click', handleClickOutside);
       };
    }, [isOpenSort]);
 

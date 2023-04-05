@@ -9,7 +9,6 @@ import {useDispatch, useSelector} from 'react-redux';
 import {setOpenMenu} from '../../redux/reduxSlices/commonSlice'
 import {setIsLogin} from '../../redux/reduxSlices/userSlice'
 import {useEffect, useRef} from 'react'
-import {handleClickOutside} from "../../utils/handleClickOutside"
 
 
 function Header () {
@@ -24,11 +23,18 @@ function Header () {
       dispatch(setIsLogin(false));
       navigate("/");
    }
-   
+
+   const handleClickOutside = (event) => {
+      const isClickInsideBlock = OpenMenuRef.current && OpenMenuRef.current.contains(event.target);
+      if (!isClickInsideBlock) {
+         dispatch(setOpenMenu(false))
+      }
+   };
+
    useEffect(() => {
-      handleClickOutside(OpenMenuRef, 'click', dispatch, setOpenMenu(false))
+      if(isOpenMenu) {document.addEventListener('click', handleClickOutside)}
       return () => {
-         handleClickOutside(OpenMenuRef, 'click', dispatch, setOpenMenu(false))
+         document.removeEventListener('click', handleClickOutside);
       };
    }, [isOpenMenu]);
 
@@ -68,10 +74,13 @@ function Header () {
 export default Header;
 
 
-
-
-
-
+   // useEffect(() => {
+   //    if(isOpenMenu) {handleClickOutside(OpenMenuRef, 'click', dispatch, setOpenMenu(false))}
+   //       return () => {
+   //          // handleClickOutside(OpenMenuRef, 'click', dispatch, setOpenMenu(false))
+   //          document.removeEventListener('click', handleClickOutside);
+   //    };
+   // }, [isOpenMenu]);
 
 
 

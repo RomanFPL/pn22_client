@@ -2,16 +2,18 @@ import Articles from "./articles/Articles";
 import Category from "./category/Category";
 import Pagination from "./pagination/Pagination";
 import Search from "./search/Search";
+import HelmetComponent from "../../commonComponents/helmet/HelmetComponent";
 
 import {useEffect} from "react"
 import {useSelector, useDispatch} from 'react-redux'
 import {getArticles} from '../../redux/reduxSlices/categorySlice'
 import {setIsLogin, setIsReg, setUser} from '../../redux/reduxSlices/userSlice'
 import {getLocalStorageData} from "../../utils/getLSData"
+import {dataForSEO} from  "../../assets/dataForSEO/dataForSEO"
 
 function Home () {
    const dispatch = useDispatch();
-   
+   const {homePage: {title, description, keywords}} = dataForSEO;
    const {category, paginationNumber, sort, searchQuery} = useSelector((state) => state.categoryData);
    const {isLogin, isReg} = useSelector((state) => state.userdata);
 
@@ -43,6 +45,7 @@ function Home () {
 
    return ( 
       <>
+         <HelmetComponent title={title} description={description} keywords={keywords} />
          <Category />
          <Articles />
          <Pagination />

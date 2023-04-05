@@ -6,7 +6,7 @@ import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import CircularProgress from '@mui/material/CircularProgress';
 import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
-
+import HelmetComponent from "../../../commonComponents/helmet/HelmetComponent";
 
 import {useSelector, useDispatch} from 'react-redux'
 import {useParams, useNavigate} from "react-router-dom";
@@ -39,6 +39,7 @@ function Article () {
 
    return ( 
       <div className="article" data-testid="article">
+         {articlePage ? <HelmetComponent title={articlePage.title} description={articlePage.description} keywords={articlePage.keywords} /> : null}
          {articlePage ?
          <>
             <div className="article_container">
