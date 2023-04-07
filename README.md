@@ -3,7 +3,7 @@
 <h2>Project Description:</h2>
 <div>The project helps people find answers to questions that concern them. The theme of the project is psychology. The project is in the format of an online store. You use the site search</h1> and find the problem you need and read the solution.</div>
 <h2>Project Reference:</h2> 
-<a href="http://18.204.209.24:5000/" target="_blank">http://18.204.209.24:5000/</a>
+<a href="https://main.d2eg7etwz7ko60.amplifyapp.com/" target="_blank">https://main.d2eg7etwz7ko60.amplifyapp.com/</a>
 
 <h2>Main stack:</h2>
 ReactJS, NodeJS, Redux toolkit, React router, React testing library, Axios.
