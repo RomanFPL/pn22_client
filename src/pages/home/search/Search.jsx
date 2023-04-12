@@ -8,7 +8,8 @@ import {setSearchOpen} from '../../../redux/reduxSlices/commonSlice'
 
 
 function Search () {
-   const {searchValue} = useSelector((state) => state.categoryData);
+   // Було б не погано стоворити на рівні редюсерів файл з селесторами де прописати щось на зразок export const getСategoryData = (state) => state.categoryData;
+   const {searchValue} = useSelector(getСategoryData);
    const {isSearchOpen} = useSelector((state) => state.commondata);
    
    const OpenSearchRef = useRef();
